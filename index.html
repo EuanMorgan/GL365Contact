@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <div class="border"></div>
+      <form class="contact-form" action="index.html" method="POST">
+        <input
+          type="text"
+          class="contact-form-text"
+          placeholder="Name:"
+          id="name"
+          autofocus
+          required
+          name="name"
+        />
+        <input
+          type="email"
+          class="contact-form-text"
+          placeholder="Email:"
+          required
+          id="email"
+          name="_replyto"
+        />
+        <textarea
+          class="contact-form-text"
+          id="message"
+          placeholder="Message:"
+          required
+          name="message"
+        ></textarea>
+        <input type="submit" class="contact-form-btn" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
