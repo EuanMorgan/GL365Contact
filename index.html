@@ -12,7 +12,14 @@
     <div class="contact-section">
       <h1>Contact Us</h1>
       <div class="border"></div>
-      <form class="contact-form" action="index.html" method="POST">
+      <form
+        class="contact-form"
+        action="https://formtoemail.com/user_forms.php"
+        method="post"
+      >
+        <input type="hidden" name="user_id" value="3FGISZ5S9FSVKS933G9O" />
+        <input type="hidden" name="form_id" value="1" />
+
         <input
           type="text"
           class="contact-form-text"
@@ -35,9 +42,15 @@
           id="message"
           placeholder="Message:"
           required
-          name="message"
+          name="comments"
         ></textarea>
         <input type="submit" class="contact-form-btn" value="Send" />
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <div
+          class="g-recaptcha"
+          data-theme="light"
+          data-sitekey="6Lcb5hUUAAAAAA4x6LBog_Ty2FSorguxg_OXyKZi"
+        ></div>
       </form>
     </div>
   </body>
